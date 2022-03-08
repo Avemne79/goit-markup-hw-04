@@ -408,28 +408,36 @@ ul {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
 
 .client {
-  display: block;
-  padding: 0;
-  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-width: 1px;
   border-style: solid;
   border-color: #afb1b8;
   border-radius: 4px;
-
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
   background-color: var(--primary-color);
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
-  fill: var(--accent-color);
+.client:hover,
+.client:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .icon-clients {
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* кнопки */
@@ -598,8 +606,8 @@ ul {
 /* блок соц-сети */
 
 .social-links {
-  margin-top: 12px;
   margin-left: 70px;
+  align-items: baseline;
 }
 
 .join-header {
@@ -614,7 +622,6 @@ ul {
 
   color: var(--primary-color);
 }
-
 .social-links-list {
   display: flex;
 }
@@ -622,7 +629,9 @@ ul {
   margin-right: 10px;
 }
 .social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -633,8 +642,6 @@ ul {
   background: var(--accent-color);
 }
 .icon-footer {
-  margin-top: 11px;
-  margin-left: 11px;
   width: 20px;
   height: 20px;
   fill: var(--primary-color);
