@@ -500,6 +500,10 @@ ul {
 /* ПОРТФОЛИО */
 
 /* наши проекты */
+.project-link {
+  display: block;
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -509,8 +513,8 @@ ul {
 }
 
 /* тень при ховере и фокусе */
-.projects-item:hover,
-.projects-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
