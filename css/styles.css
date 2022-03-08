@@ -310,6 +310,7 @@ ul {
   text-align: center;
 }
 .our-team-item {
+  background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -350,6 +351,7 @@ ul {
   color: var(--secondary-text-color);
 }
 /* иконки в команде */
+
 .team-social-links-list {
   display: flex;
   justify-content: center;
@@ -361,29 +363,28 @@ ul {
 }
 
 .social-link-team {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: #afb1b8;
 }
 
 .social-link-team:hover,
 .social-link-team:focus {
   background: var(--accent-color);
-  fill: var(--primary-color);
-}
-
-.team-icon:hover,
-.team-icon:focus {
-  background: var(--accent-color);
-  fill: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .team-icon {
-  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* постоянные клиенты */
