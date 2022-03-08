@@ -140,25 +140,17 @@ ul {
   background-color: var(--primary-color);
 }
 
-.contacts-button {
-  margin-right: 10px;
-  padding: 0;
-  border: 0;
-  background-color: var(--primary-color);
-}
-
 .icon-contacts {
+  margin-right: 10px;
   width: 16px;
   height: 16px;
-  fill: var(--secondary-text-color);
-}
-.icon-contacts:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .email-contact,
 .tel-contact {
-  display: inline-block;
+  align-items: center;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -248,19 +240,18 @@ ul {
 .features .item {
   display: block;
 
-  height: 120px;
   margin-bottom: 30px;
   background-size: auto;
-
-  background-color: var(--buttons-bg-color);
 }
 
 .feature-button {
-  padding: 0;
-  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
+
   height: 120px;
+  background-color: var(--buttons-bg-color);
 }
 
 .icon-feature {
@@ -270,7 +261,6 @@ ul {
 }
 
 .header-feature {
-  width: 210px;
   margin-bottom: 10px;
 
   font-weight: 700;
